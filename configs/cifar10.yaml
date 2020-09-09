@@ -1,9 +1,9 @@
 DATASET:
   PART_COUNT: 1
   SIZE: 60000
-  # PATH: /data/datasets/mnist/tfrecords/mnist-r%02d.tfrecords.%03d
-  PATH: data/datasets/mnist32/tfrecords/mnist-r%02d.tfrecords.%03d
-  PATH_TEST: data/datasets/mnist32/tfrecords/mnist_test-r%02d.tfrecords.%03d
+  # PATH: /data/datasets/cifar10/tfrecords/cifar10-r%02d.tfrecords.%03d
+  PATH: data/datasets/cifar10/tfrecords/cifar10-r%02d.tfrecords.%03d
+  PATH_TEST: data/datasets/cifar10/tfrecords/cifar10_test-r%02d.tfrecords.%03d
   MAX_RESOLUTION_LEVEL: 5
   FLIP_IMAGES: False
 MODEL:
@@ -13,8 +13,8 @@ MODEL:
   START_CHANNEL_COUNT: 64
   DLATENT_AVG_BETA: 0.995
   MAPPING_LAYERS: 4
-  CHANNELS: 1
-OUTPUT_DIR: mnist_results
+  #CHANNELS: 1
+OUTPUT_DIR: cifar10_results
 TRAIN:
   BASE_LEARNING_RATE: 0.002
   EPOCHS_PER_LOD: 10
